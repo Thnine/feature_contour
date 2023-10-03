@@ -1,0 +1,76 @@
+/**
+    0层
+    */
+.feature-histogram-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid lightgray;
+    min-width: 0px;
+}
+
+/**
+    1层
+    */
+.feature-histogram-title{
+    flex: 0 0 38px;
+    line-height: 38px;
+    background-image: linear-gradient(to bottom, #eee, #fff, #ddd);
+    box-shadow: 1px 1px 3px #ccc;
+
+}
+.feature-histogram-body{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+}
+
+/**
+    2层
+    */
+.feature-histogram-header{
+    flex: 0 0 0px;
+}
+
+.feature-histogram-main{
+    flex: 1 1 0;
+}
+
+.feature-histogram-foot{
+    flex: 0 0 80px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+/**
+    其他
+*/
+.feature-histogram-canvas-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.feature-histogram-canvas{
+    height: 100%;
+}
+
+.unHighlightBar{
+    stroke-width: 1;
+    stroke: white;
+    fill: #0059ff;
+    fill-opacity: 0.75;
+}
+  
+.HighlightBar{
+    stroke-width: 1;
+    stroke: white;
+    fill: #ffcc00;
+    fill-opacity: 0.75;
+}

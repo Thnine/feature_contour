@@ -1,0 +1,149 @@
+/**
+    0层
+    */
+.feature-contour-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid lightgray;
+}
+/**
+    1层
+    */
+.feature-contour-title{
+    flex: 0 0 38px;
+    line-height: 38px;
+    background-image: linear-gradient(to bottom, #eee, #fff, #ddd);
+    box-shadow: 1px 1px 3px #ccc;
+
+}
+.feature-contour-body{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+}
+    
+
+
+/**
+    2层
+    */
+.feature-contour-header{
+    flex: 0 0 80px;
+    display: flex;
+    min-height: 0px;
+}
+
+.feature-contour-main{
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+}
+
+.feature-contour-foot{
+    flex:0 0 0px;
+}
+
+/**
+    其他
+*/
+.feature-contour-controller{
+    flex: 1 1 0;
+    background-color: white;
+    margin: 10px 7px 4px 7px;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    display: flex;
+    align-items: center;
+}
+
+
+.feature-contour-shape-legend{
+    height: 100%;
+    flex:1 1 0;
+    margin-left: 30px;
+    border-left:3px solid lightgray;
+}
+
+
+.feature-contour-canvas-container{
+    /* flex: 1 1 0; */
+    background-color: white;
+    /* margin: 10px 7px 10px 7px; */
+    border:1px solid lightgray;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    display: flex;
+    align-items: center;
+    aspect-ratio : 1;
+    margin-left: 7px;
+    
+    max-height: 95%;
+
+    flex:1 1 0;
+
+    overflow: hidden;
+}
+
+.feature-contour-color-legend-container{
+    background-color: white;
+    margin-left:7px;
+    margin-right:7px;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+
+    flex:0 0 20%;
+    height: 95%;
+
+    display: flex;
+    
+
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+
+.feature-contour-color-legend{
+    height: 100%;
+}
+
+.feature-contour-canvas{
+    width: 100%;
+    height: 100%;
+}
+
+.InfoPanelStyle{
+    position:absolute;
+}
+
+/**
+    选择
+*/
+
+.lasso path {
+    fill-opacity: 0.6;
+    stroke: rgb(64, 169, 255);
+    stroke-width: 2px;
+}
+    
+.lasso .drawn{
+            fill-opacity: 0.05;
+}
+
+.lasso .loop_close {
+            fill: none;
+            stroke-dasharray: 4, 4;
+}
+.lasso .origin {
+            fill: #3399ff;
+            fill-opacity: 0.5;
+}
+
+
+.feature-contour-chosen{
+    stroke:#f17e32;
+    stroke-width:3;
+}
